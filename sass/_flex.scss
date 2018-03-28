@@ -1,0 +1,7 @@
+@mixin flex-align($hor,$ver,$dir:row){
+    display:flex;
+    flex-direction: $dir;
+    justify-content: $hor;
+    align-items: $ver;
+    
+}

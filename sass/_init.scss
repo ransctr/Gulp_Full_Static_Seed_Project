@@ -1,0 +1,63 @@
+@import url("./normalize.css");
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,800,900');
+$font-stack: 'Arial',
+sans-serif;
+$font-stack-title: 'Fira Sans',
+sans-serif;
+
+/*COLORS*/
+
+$color1:#2a2a2a;
+$color2:#a3a3a3;
+$color3:#549209;
+$color4:#fd6804;
+
+/*SIZES*/
+
+$max-width: 980px;
+$tablet-width:768px;
+$mobile-width:640px;
+$small-mobile-width:414px;
+body,
+html {
+	min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+button {
+	background: none;
+	transition: all 0.2s;
+	border: 0;
+	cursor: pointer;
+	&:active {
+		border: 0;
+	}
+}
+
+.mid-content {
+	max-width: $max-width;
+	margin: auto;
+	position: relative;
+	@media screen and (max-width: $max-width) {
+		padding-right:20px;
+		padding-left: 20px;
+	}
+}
+
+.btn_style1 {
+	border:0;
+	background-color: #0C3;
+	color: #fbfffa;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 20px 30px;
+}
